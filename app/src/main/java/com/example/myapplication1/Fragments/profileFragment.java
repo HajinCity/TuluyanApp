@@ -1,4 +1,4 @@
-package com.example.myapplication1;
+package com.example.myapplication1.Fragments;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.myapplication1.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link searchFragment#newInstance} factory method to
+ * Use the {@link profileFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class searchFragment extends Fragment {
+public class profileFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class searchFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public searchFragment() {
+    public profileFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class searchFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment searchFragment.
+     * @return A new instance of fragment profileFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static searchFragment newInstance(String param1, String param2) {
-        searchFragment fragment = new searchFragment();
+    public static profileFragment newInstance(String param1, String param2) {
+        profileFragment fragment = new profileFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -58,7 +60,8 @@ public class searchFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_activity, container, false);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search, container, false);
+        return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 }
