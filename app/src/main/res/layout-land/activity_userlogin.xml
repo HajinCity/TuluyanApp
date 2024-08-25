@@ -39,8 +39,8 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="370dp"
-        android:layout_height="60dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
         android:layout_marginTop="17dp"
         android:background="@drawable/border_rounded"
         android:ems="10"
@@ -60,8 +60,8 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="370dp"
-        android:layout_height="60dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
         android:layout_marginTop="135dp"
         android:background="@drawable/border_rounded"
         android:ems="10"
@@ -78,6 +78,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.324" />
 
+
     <Button
         android:id="@+id/forgotpasswordbtn"
         android:layout_width="wrap_content"
@@ -88,11 +89,10 @@
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.707" />
-
+        app:layout_constraintVertical_bias="0.685" />
 
     <Button
         android:id="@+id/createaccbtn"
@@ -106,15 +106,14 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.707" />
+        app:layout_constraintVertical_bias="0.685" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginbtn"
-        android:layout_width="370dp"
-        android:layout_height="50dp"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
         android:background="@drawable/blue_bg"
         android:text="Login"
         android:textColor="@color/white"
@@ -122,37 +121,39 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825" />
+        app:layout_constraintVertical_bias="0.799" />
 
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:gravity="center"
         android:inputType="text"
+        android:minHeight="48dp"
         android:text="or Sign up With"
         android:textSize="15dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908" />
+        app:layout_constraintVertical_bias="0.89"
+        tools:ignore="TextSizeCheck" />
 
     <FrameLayout
         android:layout_width="36dp"
         android:layout_height="38dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886"
+        app:layout_constraintVertical_bias="0.985"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -163,34 +164,38 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="36dp"
         android:layout_height="38dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886"
+        app:layout_constraintVertical_bias="0.985"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/rental5" />
+            app:srcCompat="@drawable/rental5"
+            tools:layout_editor_absoluteX="-266dp"
+            tools:layout_editor_absoluteY="407dp" />
+
     </FrameLayout>
 
     <FrameLayout
-        android:layout_marginBottom="6dp"
-        android:layout_marginLeft="18dp"
         android:layout_width="36dp"
         android:layout_height="38dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886"
+        app:layout_constraintVertical_bias="0.987"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -199,6 +204,8 @@
             android:layout_height="36dp"
             app:srcCompat="@drawable/apple" />
     </FrameLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
